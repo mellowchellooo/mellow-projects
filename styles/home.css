@@ -50,6 +50,7 @@ a:active {
     display: flex;
     justify-content: space-around;
     text-align: center;
+    margin-top: 50px;
 }
 
 .hero-box-heading{
