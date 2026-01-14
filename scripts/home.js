@@ -1,14 +1,25 @@
 
 
 
-function computerHeadsOrTails(){
+
+
+const flipCoin = function (){
     let randomNum = Math.random();
-    let computerMove = ''
+    let coinResult = ''
 
     if (randomNum <= 1/2){
-         computerMove = 'Heads';
+         coinResult = 'Heads';
     } else if (randomNum > 1/2){
-        computerMove = 'Tails'
+        coinResult = 'Tails'
     }
-    return computerMove
+    return coinResult
 }
+
+function showResult (){
+    const result = flipCoin();
+    document.getElementById('flip-result').textContent = result;
+}
+
+document
+  .querySelector('.flip-button')
+  .addEventListener('click', showResult);
