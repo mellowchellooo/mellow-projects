@@ -1,25 +1,20 @@
-
-
-
-
-
 const flipCoin = function (){
+    let result = '';
     let randomNum = Math.random();
-    let coinResult = ''
 
     if (randomNum <= 1/2){
-         coinResult = 'Heads';
-    } else if (randomNum > 1/2){
-        coinResult = 'Tails'
+        result = 'Heads';
+    } else {
+        result = 'Tails';
     }
-    return coinResult
+
+    document.querySelector('.flip-result').textContent = result;
 }
 
-function showResult (){
-    const result = flipCoin();
-    document.getElementById('flip-result').textContent = result;
+function resetFlip(){
+    let result = '';
+    document.querySelector('.flip-result').textContent = result;
 }
 
-document
-  .querySelector('.flip-button')
-  .addEventListener('click', showResult);
+document.querySelector('.flip-button').addEventListener('click', flipCoin);
+document.querySelector('.reset-flip').addEventListener('click', resetFlip);
