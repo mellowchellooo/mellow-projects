@@ -1,0 +1,20 @@
+
+.heads-or-tails-box{
+    border: 2px solid antiquewhite;
+    border-radius: 8px;
+    padding: 16px;
+    min-height: 20px;
+    min-width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 50px;
+    
+    
+}
+
+.heads-or-tails-text{
+    margin: 0;
+}
