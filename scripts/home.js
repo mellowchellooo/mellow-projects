@@ -1,5 +1,6 @@
 
 //this is the function for heads or tails
+/*
 const flipCoin = function (){
 
     let result = '';
@@ -20,7 +21,7 @@ function resetFlip(){
 }
 
 document.querySelector('.flip-button').addEventListener('click', flipCoin);
-document.querySelector('.reset-flip').addEventListener('click', resetFlip);
+document.querySelector('.reset-flip').addEventListener('click', resetFlip);  */
 
 //this is the functions for rock paper scissor game 
 
