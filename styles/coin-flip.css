@@ -39,8 +39,13 @@
         
     }
 
+    .flip-button-box{
+        margin-top: 10px;
+    }
+
     .coin-image{
-        display: none;
+        display: none; /* takes border off empty coin image*/
+        
     }
 
     
