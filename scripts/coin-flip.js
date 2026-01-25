@@ -9,13 +9,41 @@ const flipCoin = function (){
         result = 'Tails';
     }
 
-    document.querySelector('.flip-result').textContent = result;
+    return result
+
+   
+
+
 }
 
 function resetFlip(){
-    let result = '';
-    document.querySelector('.flip-result').textContent = result;
+    document.querySelector('.flip-result').textContent = '';
+    document.querySelector('.coin-image').src = '';
+    document.querySelector('.coin-image').style.display = 'none';
+    
+
 }
 
-document.querySelector('.flip-button').addEventListener('click', flipCoin);
+function displayResult (result){
+   let resultText = document.querySelector('.flip-result');
+   let coinImage = document.querySelector('.coin-image');
+
+   resultText.textContent = result;
+
+   if(result === 'Heads'){
+    coinImage.src = 'images/heads.webp';
+   } else {
+    coinImage.src = 'images/Tails.png';
+   }
+   coinImage.style.display = 'block';
+
+}
+
+function handleFlip(){
+    const result = flipCoin();
+    displayResult(result);
+}
+
+
+document.querySelector('.flip-button').addEventListener('click', handleFlip);
 document.querySelector('.reset-flip').addEventListener('click', resetFlip);
