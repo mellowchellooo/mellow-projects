@@ -15,6 +15,12 @@
         color: #e5e7eb;
         padding: 6px;
         width: 50px;
+        transform: transform 0.1s ease;
+       
+    }
+
+    button:active {
+      transform: scale(0.98);
     }
 
 
