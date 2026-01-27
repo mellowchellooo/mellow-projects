@@ -120,8 +120,19 @@ margin-bottom: -10px;
     
 }*/
 
+
+
 .heads-or-tails-box{
-    border: 1px solid white;
+    border: 2px solid white;
+    border-radius: 20px;
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+}
+
+.coin-flip-image{
+  max-width: 100%;
+  height: auto;
 }
 
 .heads-or-tails-text{
