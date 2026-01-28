@@ -44,8 +44,9 @@ function playGame(playerMove){
             result = 'Tie';
         }
     }
-
+    document.querySelector('.score-pictures').innerHTML = `<img src="images/${playerMove}-emoji.png" class="move-icon"> <img src="images/${move}-emoji.png" class="move-icon">`
     document.querySelector('.rock-paper-scissor-result').textContent = `You chose ${playerMove}. Computer chose ${move}. ${result}`
+    
 }
 
 document.querySelector('.rock-button').addEventListener('click', () => playGame('rock'));
