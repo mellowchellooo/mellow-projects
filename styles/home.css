@@ -1,7 +1,4 @@
-body,
-html{
-    height: 100%;
-}
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -50,29 +47,36 @@ a:active {
   opacity: 1;
 }
 
-.hero-box{
-    /*background-color: blue;*/
-    height: 200px;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    margin-top: 50px;
+.hero-box {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
 }
 
-.hero-box-heading{
-    margin-bottom: -20px;
+.hero-box-heading {
+  font-size: 48px;
+  margin: 0;
 }
 
-.hero-box-heading-2{
-margin-bottom: -10px;
+.hero-box-heading-2 {
+  font-size: 28px;
+  font-weight: 400;
+  opacity: 0.85;
+  margin: 0;
+}
+
+.hero-box p {
+  opacity: 0.7;
 }
 
 
 .skills-box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+    margin: 80px 0;
+    text-align: center;
    
 }
 
@@ -84,29 +88,52 @@ margin-bottom: -10px;
 
 .skills-text{
     display: flex;
-    gap: 150px;
-     font-size: 30px;
-    font-weight: 600;
-    margin-top: -20px;
-    text-decoration: underline;
+    gap: 60px;
+     font-size: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    opacity: 0.9;
+    justify-content: center;
 }
 
+.skills-text p {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 4px;
+}
+/* OLD
 .projects-box{
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 2px solid antiquewhite;
     border-radius: 8px;
+}*/
+/* this adds glass card effect vvv*/
+.projects-box {
+  width: 80%;
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  
 }
+
 
 .projects-heading{
     text-decoration: underline;
     margin-top: 60px;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .all-projects-box{
     display: flex;
+    justify-content: center;
     gap: 16px;
 }
 /*
@@ -136,6 +163,10 @@ margin-bottom: -10px;
     width: 100px;
     overflow: hidden;
     box-shadow: 0 0 12px rgb(97, 96, 96);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .coin-flip-image,
@@ -152,6 +183,7 @@ margin-bottom: -10px;
 
 .time{
     color: aliceblue;
+    text-align: center;
 }
 
 
